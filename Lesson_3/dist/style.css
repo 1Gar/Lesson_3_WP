@@ -1,0 +1,123 @@
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \***********************************************************************/
+
+
+video{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+audio{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 350px;
+  height: 54px;
+  
+}
+h1{
+  margin: 0px;
+  text-align: center;
+  font-size: x-large;
+  background-color: rgb(253, 253, 253);
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.short_box {
+    width: 386px;
+    height: 213px;
+    background: #ffffff;
+  }
+  
+  .high_box {
+  width: 383px;
+  height: 692px;
+  background: #ffffff;
+  }
+  
+.long_box {
+    width: 795px;
+    height: 204px;
+    background: #ffffff;
+  }
+.gallery > div {  
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+    margin-top: 18px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+  }
+  
+  .gallery > div img {
+    z-index: -5;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    transform: translate(-50%, -50%); /* Вертикальное и горизонтальное выравнивание */
+  }
+
+.gallery {
+    width: 795px;
+    display: table;
+    margin: 0 auto;
+  }
+.scroll_to {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 100%;
+    cursor: pointer;
+  }
+@media screen and (max-width: 795px) {
+    .gallery {
+      width: 595px;
+    }
+  
+    .short_box {
+      width: 283px;
+      height: 237px;
+      background: #ffffff;
+    }
+  
+    .high_box {
+      width: 283px;
+      height: 490px;
+      background: #ffffff;
+    }
+  
+    .long_box {
+      width: 595px;
+      height: 237px;
+      background: #ffffff;
+    }
+    audio{
+      width: 250px;
+    }
+  }
+  @media screen and (max-width: 595px) {
+    .gallery {
+      width: 100%;
+    }
+    .gallery > div {
+      display: block;
+      margin: 0 auto;
+      margin-top: 18px;
+      float: none!important;
+    }
+  
+    .long_box {
+      width: 283px;
+      height: 237px;
+    }
+    audio{
+      width: 250px;
+    }
+  }
